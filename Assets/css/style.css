@@ -239,6 +239,7 @@ hr
 
 .section--feature
 {
+    padding-top: 80px;
     background: linear-gradient(to top, rgb(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("../images/images/feature/background.png") center no-repeat;
     background-size: cover;
 }
@@ -332,14 +333,27 @@ hr
 .services
 {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.services__hr-two
+{
+    display: none;
+}
+
+.services__hr-one
+{
+    display: none;
 }
 
 .services__item
 {
-    flex: 1 1 0;
+    width: 33.333333%;
     position: relative;
     padding-left: 85px;
     padding-right: 35px;
+    padding: 0 35px 0px 85px;
+    /* margin-bottom: 30px; */
 }
 
 .services__icon
@@ -373,6 +387,8 @@ hr
 
 .devices__item
 {
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -380,11 +396,21 @@ hr
 .wedo
 {
     display: flex;
+    margin: 0 -15px;
 }
 
 .wedo__item
 {
-    flex: 1 1 0;
+    padding: 0 15px;
+    /* flex: 1 1 0; */
+    width: 50%;
+}
+
+.wedo__img
+{
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .accordion__item

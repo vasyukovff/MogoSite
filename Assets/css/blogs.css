@@ -5,9 +5,22 @@
 
 .blogs__item
 {
+    max-width: 380px;
     position: relative;
-    flex: 1 1 0;
+    width: 33.3333%;
     margin-right: 30px;
+}
+
+.blogs__item:last-child
+{
+    margin-right: 0;
+}
+
+.blogs__img
+{
+    max-width: 380px;
+    width: 100%;
+    height: auto;
 }
 
 .blogs__dateinfo
@@ -17,7 +30,7 @@
     height: 70px;
     background-color: #95e1d3;
     color: #fff;
-    top: 160px;
+    /* top: 130px; */
     left: -10px;
 }
 

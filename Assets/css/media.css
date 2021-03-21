@@ -26,6 +26,159 @@
         font-size: 32px;
     }
     /*------------------*/
+
+
+    /*    STATISTICS    */
+    .stat
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat__item
+    {
+        flex: none;
+        width: 33.3333%;
+
+        border: 0;
+
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .stat__item:last-child
+    {
+        border: 0;
+    }
+
+    .stat__count
+    {
+        font-size: 50px;
+    }
+
+    .stat__text
+    {
+        font-size: 12px;
+    }
+    /*------------------*/
+
+
+    /*    SERVICES     */
+    .services__hr-two
+    {
+        display: block;
+    }
+
+    .services__hr-three
+    {
+        display: none;
+    }
+
+    .services__item
+    {
+        width: 50%;
+    }
+    /*-------------*/
+
+
+    /*      WEDO     */
+    .wedo
+    {
+        flex-wrap: wrap;
+    }
+
+    .wedo__item
+    {
+        width: 100%;
+    }
+
+    .wedo__item:last-child
+    {
+        padding-top: 30px;
+    }
+
+    /*---------------*/
+
+
+
+    /*     REVIEWS     */
+    .reviews__text
+    {
+        font-size: 20px;
+    }
+
+    .reviews__author
+    {
+        font-size: 20px;
+    }
+
+    .reviews__photo
+    {
+        height: 120px;
+        width: 120px;
+    }
+
+    .reviews__item
+    {
+        padding-left: 150px;
+    }
+
+    .reviews
+    {
+        padding: 0 50px;
+    }
+    /*-----------------*/
+
+
+    /*       TEAM      */
+    .team__social__item
+    {
+        width: 45px;
+        height: 45px;
+        font-size: 25px;
+    }
+    /* --------------- */
+
+
+    /* CLIENTS */
+    .clients
+    {
+        justify-content: center;
+    }
+
+    .clients__item
+    {
+        max-width: 80%;
+        width: 100%;
+    }
+    /* --------- */
+
+
+
+    /*    FOOTER    */
+
+    .footer__inner
+    {
+        flex-wrap: wrap;
+        /* justify-content: end; */
+    }
+
+    .footer__col--left
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__col--middle
+    {
+        width: 55%;
+    }
+
+    .footer__col--right
+    {
+        width: 45%;
+    }
+    /* ------------ */
 }
 
 
@@ -50,6 +203,108 @@
     {
         padding: 40px 0;
     }
+
+
+    /*    ABOUT     */
+    .about
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 50px;
+    }
+
+    .about__item
+    {
+        max-width: 410px;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .about__item:last-child
+    {
+        margin-bottom: 0;
+    }
+    /*--------------*/
+
+
+    /*       TEAM      */
+    .team
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .team__item
+    {
+        width: 80%;
+
+        margin-bottom: 100px;
+    }
+
+    .team__item:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .team__social__item
+    {
+        width: 55px;
+        height: 55px;
+        font-size: 30px;
+    }
+    /* --------------- */
+
+
+    /* WORKS */
+    .works
+    {
+        flex-wrap: wrap;
+    }
+
+    .works__col
+    {
+        width: 50%;
+        flex: none;
+    }
+    /* --------- */
+
+    /* CLIENTS */
+    .clients__item
+    {
+        max-width: 800px;
+        width: 100%;
+    }
+    /* --------- */
+
+
+    /* BLOGS */
+    .blogs
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        /* padding-left: 13%; */
+    }
+
+    .blogs__item
+    {
+        width: 100%;
+        margin-bottom: 40px;
+        margin-right: 0;
+        /* jus */
+    }
+
+    .blogs__item:last-child
+    {
+        margin-bottom: 0;
+    }
+
+    .blogs__content
+    {
+        max-width: 380px;
+        text-align: center;
+    }
+    /* ---------- */
 }
 
 
@@ -89,4 +344,186 @@
         margin: 20px auto;   
     }
     /*------------------*/
+
+
+    /*    STATISTICS     */
+    .stat
+    {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stat__item
+    {
+        flex: none;
+        width: 100%;
+
+        border-bottom: 1px solid #b5eae0;
+
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .stat__item:last-child
+    {
+        border: 0;
+    }
+
+    .stat__count
+    {
+        font-size: 44px;
+    }
+
+    .stat__text
+    {
+        font-size: 12px;
+    }
+    /*-------------------*/
+
+
+    /*    SERVICES     */
+
+    .services
+    {
+        justify-content: center;
+    }
+
+    .services__hr-one
+    {
+        display: block;
+    }
+
+    .services__hr-three
+    {
+        display: block;
+    }
+
+    .services__item
+    {
+        width: 100%;
+    }
+    /*-----------------*/
+
+    .devices
+    {
+        max-width: 320px;
+    }
+
+
+    /*     REVIEWS     */
+    .reviews__text
+    {
+        font-size: 16px;
+    }
+
+    .reviews__author
+    {
+        font-size: 16px;
+    }
+
+    .reviews__photo
+    {
+        height: 100px;
+        width: 100px;
+        position: relative;
+    }
+
+    .reviews__item
+    {
+        width: 100%;
+        padding: 0 15px;
+        text-align: center;
+    }
+
+    .reviews
+    {
+        padding: 0 20px;
+        
+    }
+    /*-----------------*/
+
+
+    /* TEAM */
+    .team__social__item
+    {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    /* --------- */
+
+    .section.section--gray
+    {
+        padding: 10px 0;
+    }
+
+    /* WORKS */
+    .works__icon
+    {
+        width: 30px;
+        color: #fff;
+    }
+
+    .works__title
+    {
+        font-size: 14px;
+    }
+
+    .works__text
+    {
+        font-size: 12px;
+    }
+    /* --------- */
+
+
+    /* CLIENTS */
+    .clients__item
+    {
+        padding: 0 5px 0 5px;
+    }
+
+    .clients__photo
+    {
+         position: relative; 
+         left: 0;
+    }
+    /* --------- */
+
+    /*    FOOTER    */
+
+    .footer__inner
+    {
+        flex-wrap: wrap;
+        /* justify-content: end; */
+    }
+
+    .footer__col--left
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__col--middle
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__col--right
+    {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .footer__instagram
+    {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footer__instagram-link
+    {
+        text-align: center;
+    }
+    /* ------------ */
 }
