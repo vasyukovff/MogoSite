@@ -22,17 +22,17 @@
 <body>
 
     <!-- HEADER START -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__logo">MoGo</div>
+                <div class="header__logo" data-scroll="#intro">MoGo</div>
 
-                <nav class="nav">
-                    <a class="nav__link" href="#">About</a>
-                    <a class="nav__link" href="#">Service</a>
-                    <a class="nav__link" href="#">Blog</a>
-                    <a class="nav__link" href="#">Work</a>
-                    <a class="nav__link" href="#">Contact</a>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#about">About</a>
+                    <a class="nav__link" href="#" data-scroll="#service">Service</a>
+                    <a class="nav__link" href="#" data-scroll="#blog">Blog</a>
+                    <a class="nav__link" href="#" data-scroll="#work">Work</a>
+                    <a class="nav__link" href="#" data-scroll="#footer">Contact</a>
                     <a class="nav__link" href="#">
                         <i class="fas fa-shopping-cart"></i>
                     </a>
@@ -40,6 +40,10 @@
                         <i class="fas fa-search"></i>
                     </a>
                 </nav>
+
+                <button class="nav-toggle" type="button" id="nav_toggle">
+                    <span class="nav-toggle__item">Menu</span>
+                </button>
             </div>
         </div>
     </header>
@@ -47,7 +51,7 @@
 
 
     <!-- HEADER INTRO START -->
-    <div class="intro">
+    <div class="intro" id="intro">
         <div class="container">
             <div class="intro__inner">
                 <h2 class="intro__suptitle">Creative Template</h2>
@@ -83,7 +87,7 @@
     <!-- HEADER INTRO END -->
 
     <!-- ABOUT US START -->
-    <section class="section">
+    <section class="section" id="about">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">What we do</h3>
@@ -152,7 +156,7 @@
 
 
     <!-- SERVICES START -->
-    <div class="section">
+    <div class="section" id="service">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">We work with</h3>
@@ -433,7 +437,7 @@
 
 
     <!-- WORKS START -->
-    <div class="section">
+    <div class="section" id="work">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">Who we do</h3>
@@ -585,8 +589,8 @@
     </div>
     <!-- CLIENTS END -->
 
-    
-    <div class="section">
+    <!-- BLOG START -->
+    <div class="section" id="blog">
         <div class="container">
             <div class="section__header">
                 <h3 class="section__suptitle">Our stories</h3>
@@ -663,6 +667,8 @@
             </div>
         </div>
     </div>
+    <!-- BLOG END -->
+
 
     <div class="section--map">
         <div class="container">
@@ -675,7 +681,7 @@
         </div>
     </div>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__col footer__col--left">
@@ -810,5 +816,11 @@
             </div>
         </div>
     </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="Assets/js/app.js"></script>
+
+
 </body>
 </html>

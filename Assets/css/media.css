@@ -184,9 +184,37 @@
 
 @media (max-width: 770px)
 {
+    .header
+    {
+        padding: 10px 0;
+    }
+
     .nav
     {
         display: none;
+    }
+
+    .nav.active
+    {
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f38181;
+    }
+
+    .nav__link
+    {
+        display: block;
+        margin: 0;
+        padding: 8px 20px;
+        text-align: right;
+    }
+
+    .nav-toggle
+    {
+        display: block;
     }
 
     .slider__text
