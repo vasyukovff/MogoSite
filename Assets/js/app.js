@@ -86,4 +86,39 @@ $(function()
         $("#nav").toggleClass("active");
         $("#nav_toggle").toggleClass("active");
     });
+
+
+    $("[data-collapse]").on("click", function(event)
+    {
+        event.preventDefault();
+
+        var wedoItem = $(this).data("collapse");
+
+
+        $("#wedo_1").removeClass("active");
+        $("#wedo_2").removeClass("active");
+        $("#wedo_3").removeClass("active");
+
+        $(wedoItem).addClass("active");
+    });
+
+
+    /*$("[data-slider]").slick({
+        Infinity: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });*/
+
+    $("#reviews_1").slick({
+        Infinity: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
+
+      $("#reviews_2").slick({
+        Infinity: true,
+        fade: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      });
 });

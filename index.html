@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300i;400;700&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@300i;400;700&display=swap" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Assets/css/style.css" >
     <link rel="stylesheet" href="./Assets/css/about.css">
     <link rel="stylesheet" href="./Assets/css/team.css" >
@@ -15,6 +17,8 @@
     <link rel="stylesheet" href="./Assets/css/blogs.css">
     <link rel="stylesheet" href="./Assets/css/map.css">
     <link rel="stylesheet" href="./Assets/css/footer.css">
+    <!-- <link rel="stylesheet" type="text/css" href="Assets/slick/slick-theme.css"> -->
+    <link rel="stylesheet" type="text/css" href="Assets/slick/slick.css">
     <script src="https://kit.fontawesome.com/aa76462a44.js" crossorigin="anonymous"></script>
     <title>Mogo</title>
     <link rel="stylesheet" href="./Assets/css/media.css">
@@ -249,8 +253,8 @@
                 </div>
                 <div class="wedo__item">
                     <div class="accordion">
-                        <div class="accordion__item active">
-                            <div class="accordion__header">
+                        <div class="accordion__item active" id="wedo_1">
+                            <div class="accordion__header" data-collapse="#wedo_1">
                                 <img class="accordion__icon" src="Assets/images/images/services/2.png" alt="">
                                 <div class="accordion__title">photography</div>
                             </div>
@@ -264,8 +268,8 @@
                             </div>
                         </div>
 
-                        <div class="accordion__item">
-                            <div class="accordion__header">
+                        <div class="accordion__item" id="wedo_2">
+                            <div class="accordion__header" data-collapse="#wedo_2">
                                 <img class="accordion__icon" src="Assets/images/images/services/1.png" alt="">
                                 <div class="accordion__title">Creativity</div>
                             </div>
@@ -279,8 +283,8 @@
                             </div>
                         </div>
 
-                        <div class="accordion__item">
-                            <div class="accordion__header">
+                        <div class="accordion__item" id="wedo_3">
+                            <div class="accordion__header" data-collapse="#wedo_3">
                                 <img class="accordion__icon" src="Assets/images/images/services/3.png" alt="">
                                 <div class="accordion__title">Web Design</div>
                             </div>
@@ -305,12 +309,23 @@
     <div class="section section--gray">
         <div class="container">
             <div class="reviews">
-                <div class="reviews__item">
-                    <img class="reviews__photo" src="http://placehold.it/145" alt="">
-                    <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam facilis temporibus 
-                        ad voluptatibus aspernatur nulla magnam, ullam obcaecati fuga repudiandae sed voluptatem magni quasi laborum facere qui 
-                        repellendus quis."</div>
-                    <div class="reviews__author">Jon Doe</div>
+                <div id="reviews_1">
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="http://placehold.it/145" alt="">
+                            <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam facilis temporibus 
+                                ad voluptatibus aspernatur nulla magnam, ullam obcaecati fuga repudiandae sed voluptatem magni quasi laborum facere qui 
+                                repellendus quis."</div>
+                            <div class="reviews__author">Jon Doe</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="http://placehold.it/145" alt="">
+                            <div class="reviews__text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint quas dignissimos illum architecto aspernatur voluptates modi aliquid esse earum quam quisquam placeat quidem molestias tempore illo quis sequi, consequuntur odit?"</div>
+                            <div class="reviews__author">Michael Vas</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -523,12 +538,25 @@
     <div class="section">
         <div class="container">
             <div class="reviews">
-                <div class="reviews__item">
-                    <img class="reviews__photo" src="http://placehold.it/145" alt="">
-                    <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam facilis temporibus 
-                        ad voluptatibus aspernatur nulla magnam, ullam obcaecati fuga repudiandae sed voluptatem magni quasi laborum facere qui 
-                        repellendus quis."</div>
-                    <div class="reviews__author">Jon Doe</div>
+
+                <!-- <button class="slick-prev slick-arrow" type="button"></button> -->
+                <div id="reviews_2">
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="http://placehold.it/145" alt="">
+                            <div class="reviews__text">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias numquam facilis temporibus 
+                                ad voluptatibus aspernatur nulla magnam, ullam obcaecati fuga repudiandae sed voluptatem magni quasi laborum facere qui 
+                                repellendus quis."</div>
+                            <div class="reviews__author">Jon Doe</div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="reviews__item">
+                            <img class="reviews__photo" src="http://placehold.it/145" alt="">
+                            <div class="reviews__text">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati accusamus molestiae, eius consectetur, doloremque quod voluptates animi repellat aut soluta sed ex assumenda amet maiores. Accusamus nisi temporibus officiis mollitia?"</div>
+                            <div class="reviews__author">Scott Roob</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -819,6 +847,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="Assets/slick/slick.min.js"></script>
 <script src="Assets/js/app.js"></script>
 
 
